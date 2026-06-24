@@ -302,6 +302,10 @@
     .c6 .fcard-inner { background: linear-gradient(135deg, #1a0a2e 0%, #6a1b9a 100%); }
 
     /* EXPERIENCE SECTION */
+    #education {
+      padding: 120px 48px;
+    }
+
     #experience {
       padding: 120px 48px;
     }
@@ -412,6 +416,92 @@
       border-radius: 100px;
       color: rgba(160,180,255,0.9);
     }
+
+    /* Education specific styles */
+    .edu-grade {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+      padding: 6px 14px;
+      background: rgba(91,127,255,0.08);
+      border: 1px solid rgba(91,127,255,0.2);
+      border-radius: 100px;
+    }
+    .edu-grade-icon { font-size: 0.9rem; }
+
+    .edu-activities {
+      margin-top: 16px;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 12px;
+    }
+    .edu-activities-title {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 12px;
+    }
+    .edu-activities-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .edu-activities-list li {
+      font-size: 0.75rem;
+      color: var(--muted);
+      padding: 4px 12px;
+      background: rgba(162,89,255,0.08);
+      border: 1px solid rgba(162,89,255,0.15);
+      border-radius: 100px;
+      transition: all 0.3s;
+    }
+    .edu-activities-list li:hover {
+      background: rgba(162,89,255,0.15);
+      color: var(--text);
+    }
+
+    .edu-skills {
+      margin-top: 16px;
+    }
+    .edu-skills-title {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .edu-skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .edu-skill-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+      padding: 5px 14px;
+      background: rgba(91,127,255,0.12);
+      border: 1px solid rgba(91,127,255,0.25);
+      border-radius: 100px;
+      color: rgba(160,180,255,0.9);
+    }
+
+    .edu-achievement {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #ffcc00;
+      margin-top: 10px;
+    }
+    .edu-achievement-icon { font-size: 1rem; }
 
     /* SKILLS SECTION */
     #skills {
@@ -833,6 +923,7 @@
   <nav>
     <a href="#" class="logo">NS<span>.</span></a>
     <ul class="nav-links">
+      <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#work">Projects</a></li>
@@ -905,6 +996,80 @@
           <span class="fcard-tag">Open Source</span>
           <div class="fcard-icon">💻</div>
           <div class="fcard-title">Vibe Coding</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-header reveal">
+      <div>
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024 – 2028</div>
+        <div class="timeline-role">B.Tech (Computer Science & Engineering)</div>
+        <div class="timeline-company">🎓 Kalasalingam University</div>
+        <div class="edu-grade">
+          <span class="edu-grade-icon">📊</span>
+          <strong>CGPA: 8.48</strong> / 10.0
+        </div>
+        <div class="timeline-desc">
+          Specialization in Artificial Intelligence — comprehensive study of AI/ML algorithms, data science, software engineering, and modern computing technologies.
+        </div>
+        <div class="edu-activities">
+          <div class="edu-activities-title">Activities & Societies</div>
+          <ul class="edu-activities-list">
+            <li>IEEE Student Member</li>
+            <li>Event Coordinator – IEEE SMC Society</li>
+            <li>Open Source Contributor @ IIT Ropar</li>
+            <li>Full-Stack Developer</li>
+            <li>UI/UX Designer</li>
+            <li>AI & ML Enthusiast</li>
+            <li>Software Engineering Projects</li>
+            <li>Technical Innovation Activities</li>
+            <li>Community Building</li>
+            <li>Technology Leadership</li>
+          </ul>
+        </div>
+        <div class="edu-skills">
+          <div class="edu-skills-title">Key Skills Developed</div>
+          <div class="edu-skills-list">
+            <span class="edu-skill-tag">Software Development</span>
+            <span class="edu-skill-tag">Full-Stack Development</span>
+            <span class="edu-skill-tag">Frontend Development</span>
+            <span class="edu-skill-tag">React.js</span>
+            <span class="edu-skill-tag">UI/UX Design</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2022 – 2024</div>
+        <div class="timeline-role">Intermediate (Class XII) – MPC</div>
+        <div class="timeline-company">🎓 Sri Chaitanya College of Education</div>
+        <div class="edu-grade">
+          <span class="edu-grade-icon">🏆</span>
+          <strong>Percentage: 94.2%</strong>
+        </div>
+        <div class="timeline-desc">
+          Completed higher secondary education with focus on Mathematics, Physics, and Chemistry — building strong analytical and problem-solving foundations.
+        </div>
+      </div>
+      <div class="timeline-item reveal" style="padding-bottom: 0;">
+        <div class="timeline-date">2022</div>
+        <div class="timeline-role">Secondary Education (Class X)</div>
+        <div class="timeline-company">🎓 ZPH School</div>
+        <div class="edu-grade">
+          <span class="edu-grade-icon">⭐</span>
+          <strong>Percentage: 84%</strong>
+        </div>
+        <div class="edu-achievement">
+          <span class="edu-achievement-icon">🏅</span>
+          <strong>School Topper</strong> — Recognized for outstanding academic performance
         </div>
       </div>
     </div>
