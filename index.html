@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikhil Sai Kenguri — Full-Stack Developer | React.js, Node.js, MongoDB | AI & ML Student</title>
+  <title>Nikhil Sai Kenguri — AI & ML Student | Frontend Developer | UI/UX Designer | IIT Ropar Intern</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Personal portfolio of Nikhil Sai Kenguri — Full-Stack Developer (MERN Stack), UI/UX Designer, Open Source Contributor, and B.Tech CSE (AI & ML) student at Kalasalingam University. Currently intern at VLED Lab, IIT Ropar.">
-  <meta name="keywords" content="Nikhil Sai Kenguri, Full-Stack Developer, React.js, Node.js, Express.js, MongoDB, MERN Stack, AI ML Student, Kalasalingam University, IIT Ropar Intern, E-Cell IIT Bombay, Smart Crutch, CrowdFAQ, GridSense AI">
+  <meta name="description" content="Personal portfolio of Nikhil Sai Kenguri — AI & ML Student, Frontend Developer, UI/UX Designer, and Open Source Contributor. Intern at VLED Lab, IIT Ropar.">
+  <meta name="keywords" content="Nikhil Sai Kenguri, Frontend Developer, React.js, Node.js, Express.js, MongoDB, MERN Stack, UI/UX Designer, Open Source Contributor, AI ML Student, Kalasalingam University, IIT Ropar Intern, E-Cell IIT Bombay, Smart Crutch, CrowdFAQ, GridSense AI">
   <meta name="author" content="Nikhil Sai Kenguri">
   
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Nikhil Sai Kenguri — Full-Stack Developer & AI/ML Engineer">
-  <meta property="og:description" content="Full-Stack Developer skilled in React.js, Node.js, Express.js, MongoDB, and UI/UX Design. Contributing to live production code at IIT Ropar's VLED Lab.">
+  <meta property="og:title" content="Nikhil Sai Kenguri — Frontend Developer & AI/ML Student">
+  <meta property="og:description" content="AI & ML Student and Frontend Developer skilled in React.js, Node.js, Express.js, MongoDB, and UI/UX Design. Intern at VLED Lab, IIT Ropar.">
   <meta property="og:image" content="assets/profile_photo.jpg">
   <meta property="og:url" content="https://nikhilsai-9.github.io/nikhilsai-portfolio/">
 
@@ -27,7 +27,7 @@
       --text: #f0eeea;
       --accent: #5b7fff;
       --accent2: #a259ff;
-      --muted: rgba(240,238,234,0.55);
+      --muted: rgba(240,238,234,0.45);
       --card-bg: rgba(255,255,255,0.02);
       --border-color: rgba(255,255,255,0.07);
     }
@@ -41,7 +41,7 @@
       overflow-x: hidden;
     }
 
-    /* CANVAS */
+    /* CANVAS BACKGROUND */
     #bg-canvas {
       position: fixed;
       top: 0; left: 0;
@@ -50,7 +50,7 @@
       pointer-events: none;
     }
 
-    /* NAV */
+    /* NAVIGATION */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -207,47 +207,47 @@
 
     .hero-label {
       font-size: 0.75rem;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 24px;
       display: flex;
       align-items: center;
       gap: 12px;
-      font-weight: 600;
+      font-weight: 500;
     }
     .hero-label::before {
       content: '';
-      width: 32px; height: 1px;
+      width: 28px; height: 1px;
       background: var(--accent);
       display: inline-block;
     }
 
+    /* ORIGINAL HERO NAME STYLING RESTORED EXACTLY */
     .hero-name {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(3rem, 5.8vw, 5.5rem);
-      line-height: 1.05;
+      font-size: clamp(3rem, 7vw, 6.5rem);
+      line-height: 1.0;
       font-weight: 700;
       letter-spacing: -2px;
-      background: linear-gradient(135deg, #ffffff 0%, #b0c4ff 50%, #d8b0ff 100%);
+      background: linear-gradient(135deg, #f0eeea 0%, #a0b0ff 50%, #d4a0ff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       position: relative;
       z-index: 2;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .hero-name span { display: block; }
 
     .hero-role {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.2rem, 2.2vw, 1.9rem);
+      font-size: clamp(1.3rem, 3vw, 2.4rem);
       font-weight: 400;
       font-style: italic;
       color: var(--muted);
-      margin-bottom: 24px;
-      line-height: 1.3;
+      margin-bottom: 28px;
     }
 
     .hero-sub {
@@ -255,12 +255,12 @@
       font-size: 0.95rem;
       line-height: 1.85;
       color: var(--muted);
-      margin-bottom: 36px;
+      margin-bottom: 40px;
     }
 
     .hero-btns {
       display: flex;
-      gap: 14px;
+      gap: 16px;
       flex-wrap: wrap;
     }
 
@@ -268,7 +268,7 @@
       background: var(--accent);
       color: #fff;
       border: none;
-      padding: 14px 30px;
+      padding: 14px 32px;
       border-radius: 100px;
       font-family: 'Inter', sans-serif;
       font-size: 0.85rem;
@@ -292,7 +292,7 @@
       background: transparent;
       color: var(--text);
       border: 1px solid rgba(240,238,234,0.2);
-      padding: 14px 28px;
+      padding: 14px 32px;
       border-radius: 100px;
       font-family: 'Inter', sans-serif;
       font-size: 0.85rem;
@@ -306,13 +306,12 @@
       transition: all 0.3s;
     }
     .btn-outline:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(91,127,255,0.08);
+      border-color: var(--text);
+      background: rgba(240,238,234,0.07);
       transform: translateY(-2px);
     }
 
-    /* 3D PROFILE PHOTO CONTAINER */
+    /* 3D PROFILE PHOTO & ORIGINAL COLOR ORBIT CONTAINER */
     .hero-photo-wrapper {
       position: relative;
       width: 100%;
@@ -328,6 +327,38 @@
       transform-style: preserve-3d;
       transition: transform 0.15s ease-out;
       cursor: pointer;
+    }
+
+    /* ELEGANT ORBIT RINGS IN ORIGINAL ACCENT COLOR */
+    .photo-orbit-ring {
+      position: absolute;
+      inset: -32px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(91, 127, 255, 0.45);
+      box-shadow: 0 0 40px rgba(91, 127, 255, 0.22), inset 0 0 25px rgba(91, 127, 255, 0.08);
+      pointer-events: none;
+      z-index: -1;
+      animation: orbitFloat 8s ease-in-out infinite alternate;
+    }
+
+    .photo-orbit-ring-secondary {
+      position: absolute;
+      inset: -52px;
+      border-radius: 50%;
+      border: 1px dashed rgba(162, 89, 255, 0.25);
+      pointer-events: none;
+      z-index: -2;
+      animation: orbitRotate 28s linear infinite;
+    }
+
+    @keyframes orbitFloat {
+      0% { transform: scale(0.98) rotate(0deg); opacity: 0.7; }
+      100% { transform: scale(1.03) rotate(5deg); opacity: 0.95; }
+    }
+
+    @keyframes orbitRotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     .photo-glow-aura {
@@ -415,10 +446,10 @@
       50% { opacity: 0.3; }
     }
 
-    .badge-status { top: -16px; left: -10px; transform: translateZ(40px); }
+    .badge-status { top: -18px; left: -10px; transform: translateZ(40px); }
     .badge-role1 { bottom: 45px; right: -25px; transform: translateZ(55px); }
     .badge-role2 { top: 35%; left: -32px; transform: translateZ(35px); }
-    .badge-role3 { bottom: -16px; left: 15px; transform: translateZ(45px); }
+    .badge-role3 { bottom: -18px; left: 15px; transform: translateZ(45px); }
 
     /* SECTION HEADERS */
     .section-header {
@@ -429,15 +460,14 @@
     }
 
     .section-label {
-      font-size: 0.75rem;
-      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--accent);
       display: flex;
       align-items: center;
       gap: 10px;
       margin-bottom: 12px;
-      font-weight: 600;
     }
     .section-label::before {
       content: '';
@@ -490,11 +520,10 @@
     }
 
     .timeline-date {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--accent);
-      font-weight: 600;
       margin-bottom: 8px;
     }
 
@@ -512,7 +541,27 @@
       font-weight: 500;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .status-badge {
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-weight: 600;
+    }
+    .status-badge.completed {
+      background: rgba(91,127,255,0.15);
+      border: 1px solid rgba(91,127,255,0.4);
+      color: rgba(160,180,255,0.95);
+    }
+    .status-badge.ongoing {
+      background: rgba(162,89,255,0.15);
+      border: 1px solid rgba(162,89,255,0.4);
+      color: rgba(200,160,255,0.95);
     }
 
     .timeline-card {
@@ -584,15 +633,14 @@
     }
 
     .ttag {
-      font-size: 0.65rem;
-      letter-spacing: 0.08em;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       background: rgba(91,127,255,0.1);
       border: 1px solid rgba(91,127,255,0.25);
       padding: 4px 12px;
       border-radius: 100px;
-      color: rgba(175,195,255,0.95);
-      font-weight: 500;
+      color: rgba(160,180,255,0.9);
     }
 
     /* EDUCATION CARDS */
@@ -742,17 +790,16 @@
     }
 
     .project-client {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: rgba(255,255,255,0.5);
-      font-weight: 600;
     }
 
     .project-name {
       font-family: 'Playfair Display', serif;
       font-size: clamp(1.3rem, 2.2vw, 1.9rem);
-      font-weight: 600;
+      font-weight: 400;
     }
 
     .project-desc {
@@ -765,15 +812,14 @@
     .project-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
 
     .ptag {
-      font-size: 0.62rem;
-      letter-spacing: 0.08em;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.12);
       padding: 4px 12px;
       border-radius: 100px;
-      color: rgba(255,255,255,0.8);
-      font-weight: 500;
+      color: rgba(255,255,255,0.65);
     }
 
     .project-links {
@@ -803,10 +849,10 @@
       transform: translateY(-2px);
     }
 
-    .p1-bg { background: linear-gradient(135deg, #0b1536 0%, #15225c 60%, #202e7a 100%); }
-    .p2-bg { background: linear-gradient(135deg, #002218 0%, #005449 60%, #007769 100%); }
-    .p3-bg { background: linear-gradient(135deg, #18002b 0%, #3e0e78 60%, #5b1694 100%); }
-    .p5-bg { background: linear-gradient(135deg, #1a0800 0%, #c44100 60%, #e05e00 100%); }
+    .p1-bg { background: linear-gradient(135deg, #0d1b4b 0%, #1a237e 60%, #283593 100%); }
+    .p2-bg { background: linear-gradient(135deg, #00251a 0%, #00695c 60%, #00897b 100%); }
+    .p3-bg { background: linear-gradient(135deg, #1a0030 0%, #4a148c 60%, #6a1b9a 100%); }
+    .p5-bg { background: linear-gradient(135deg, #1a0a00 0%, #e65100 60%, #f57c00 100%); }
 
     .proj-canvas {
       position: absolute;
@@ -1059,9 +1105,9 @@
     }
     .form-status.success {
       display: block;
-      background: rgba(0, 230, 118, 0.1);
-      border: 1px solid rgba(0, 230, 118, 0.3);
-      color: #00e676;
+      background: rgba(91, 127, 255, 0.1);
+      border: 1px solid rgba(91, 127, 255, 0.3);
+      color: #a0b0ff;
     }
     .form-status.error {
       display: block;
@@ -1176,6 +1222,8 @@
       .floating-badge { font-size: 0.68rem; padding: 6px 12px; }
       .badge-role2 { left: -10px; }
       .badge-role1 { right: -10px; }
+      .photo-orbit-ring { inset: -20px; }
+      .photo-orbit-ring-secondary { inset: -35px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1185,6 +1233,7 @@
       }
       .reveal { opacity: 1 !important; transform: none !important; }
       .photo-3d-card { transform: none !important; }
+      .photo-orbit-ring, .photo-orbit-ring-secondary { animation: none !important; }
     }
   </style>
 </head>
@@ -1233,36 +1282,46 @@
     </ul>
   </div>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (RESTORED ORIGINAL STYLE + ORBIT & PROFILE PHOTO) -->
   <section id="hero">
     <div class="hero-container">
       <div class="hero-text">
-        <div class="hero-label">Full-Stack Developer · AI & ML Student · Open Source Contributor</div>
+        <div class="hero-label">AI &amp; ML Student · Frontend Developer · UI/UX Designer · IIT Ropar Intern</div>
+        
+        <!-- RESTORED EXACT ORIGINAL NAME STYLING -->
         <h1 class="hero-name">
           <span>Nikhil Sai</span>
           <span>Kenguri</span>
         </h1>
-        <div class="hero-role reveal">Full-Stack Developer (MERN) & UI/UX Designer</div>
+        
+        <div class="hero-role reveal">AI intern at IIT Ropar. Building real products.</div>
+        
         <p class="hero-sub reveal">
-          B.Tech AI & ML student at Kalasalingam University (CGPA 8.48). Currently contributing to live production code at IIT Ropar's VLED Lab (CrowdFAQ MERN platform). Building Smart Crutch (Healthcare IoT with IEEE EPICS funding under review) and GridSense AI. Actively seeking SDE, Frontend, and Full-Stack Internships.
+          B.Tech AI &amp; ML student contributing to live production code at IIT Ropar's VLED Lab. Also building a healthcare IoT device to help post-injury patients recover safely — with IEEE EMBS international funding under review. Actively learning React Native to move into mobile development.
         </p>
+
         <div class="hero-btns reveal">
           <a href="#work" class="btn-primary">View Projects →</a>
-          <a href="#experience" class="btn-outline">View Experience</a>
-          <a href="#contact" class="btn-outline">Contact Me</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
           <a href="Nikhilsai_CV_Final.pdf" download="Nikhilsai_CV_Final.pdf" class="btn-outline">📄 Resume</a>
         </div>
       </div>
 
-      <!-- 3D INTERACTIVE PROFILE PHOTO CARD -->
+      <!-- 3D PROFILE PHOTO & ELEGANT ORIGINAL ACCENT COLOR ORBIT -->
       <div class="hero-photo-wrapper reveal">
         <div class="photo-3d-card" id="photo3DCard">
+          
+          <!-- ELEGANT ORBIT RINGS IN ORIGINAL ACCENT COLOR -->
+          <div class="photo-orbit-ring"></div>
+          <div class="photo-orbit-ring-secondary"></div>
           <div class="photo-glow-aura"></div>
+          
           <div class="photo-glass-frame">
-            <img src="assets/profile_photo.jpg" alt="Nikhil Sai Kenguri - Full Stack Developer Profile Photo" class="hero-profile-img" />
+            <img src="assets/profile_photo.jpg" alt="Nikhil Sai Kenguri - Profile Photo" class="hero-profile-img" />
             <div class="photo-reflection"></div>
           </div>
-          <!-- PARALLAX BADGES -->
+
+          <!-- PARALLAX FLOATING BADGES -->
           <div class="floating-badge badge-status" data-depth="0.4">
             <span class="status-dot"></span> Available for Internships
           </div>
@@ -1270,7 +1329,7 @@
             ⚛️ MERN Stack
           </div>
           <div class="floating-badge badge-role2" data-depth="0.5">
-            🤖 AI & ML
+            🤖 AI &amp; ML
           </div>
           <div class="floating-badge badge-role3" data-depth="0.3">
             🎨 UI/UX Design
@@ -1292,22 +1351,25 @@
       
       <!-- Vicharanashala / IIT Ropar -->
       <div class="timeline-item reveal">
-        <div class="timeline-date">June 2026 — Present (Summer 2026)</div>
-        <div class="timeline-role">Full-Stack Developer Intern & Open Source Contributor</div>
-        <div class="timeline-company">🏢 Vicharanashala (Lab for Education Design) — VLED Lab, IIT Ropar</div>
+        <div class="timeline-date">June 2026 — July 2026</div>
+        <div class="timeline-role">Full-Stack Developer Intern</div>
+        <div class="timeline-company">
+          <span>🏢 Vicharanashala (Lab for Education Design) — VLED Lab, IIT Ropar</span>
+          <span class="status-badge completed">Completed Internship</span>
+        </div>
         <div class="timeline-card">
           <div class="timeline-desc">
-            Solo-designed and built <strong>CrowdFAQ</strong>, a full-stack production MERN platform (React/Vite, Node.js, Express.js, MongoDB) enabling communities to crowdsource and share knowledge. Contributing to real GitHub issues with commits merged to the main repository.
+            Solo-designed and built <strong>CrowdFAQ</strong>, a full-stack production MERN platform (React/Vite, Node.js, Express.js, MongoDB) enabling communities to crowdsource and share knowledge. Completed full delivery lifecycle from architecture to automated SLA verification.
           </div>
           
           <div id="exp-crowdfaq-details" style="display: none;">
             <ul class="exp-bullet-list">
-              <li><strong>AI Integration:</strong> Integrated Google Gemini AI to automatically summarize lengthy community discussions into concise, actionable insights.</li>
-              <li><strong>Embeddable Widget & Extension:</strong> Developed an embeddable CrowdFAQ widget for one-line integration into any website, alongside a companion browser extension for cross-site access.</li>
-              <li><strong>Reputation Engine:</strong> Designed and implemented a contributor reputation system featuring tiered badges, ratings, and an interactive management dashboard.</li>
-              <li><strong>Product Lifecycle Ownership:</strong> Owned the complete product lifecycle: architecture, frontend/backend dev, REST API design, testing, and deployment.</li>
-              <li><strong>Locust SLA & Load Testing:</strong> Engineered a Locust-based load and SLA testing suite for the Node.js reviewer backend, simulating 50+ concurrent users across login, queue retrieval, and submission workflows.</li>
-              <li><strong>CI/CD Integration:</strong> Built an automated SLA verification engine to validate 95th-percentile latency against defined thresholds, integrated with GitHub Actions CI to fail builds on performance regressions and generate HTML/CSV performance reports.</li>
+              <li><strong>Google Gemini AI Summarization:</strong> Integrated Google Gemini AI to automatically summarize lengthy community discussions into concise insights.</li>
+              <li><strong>Embeddable Widget &amp; Browser Extension:</strong> Developed an embeddable CrowdFAQ widget for one-line website integration alongside a companion browser extension.</li>
+              <li><strong>Contributor Reputation System:</strong> Implemented a gamified contributor reputation system featuring tiered badges, ratings, and an interactive admin dashboard.</li>
+              <li><strong>Product Lifecycle Ownership:</strong> Owned complete lifecycle including system architecture, MERN frontend/backend dev, REST API integration, testing, and deployment.</li>
+              <li><strong>Locust Load &amp; SLA Testing:</strong> Engineered a Locust-based load and SLA testing suite for the Node.js reviewer backend, simulating 50+ concurrent users across login, queue retrieval, and submission workflows.</li>
+              <li><strong>Automated SLA Verification Engine:</strong> Built an automated SLA verification engine to validate 95th-percentile latency against defined thresholds, integrated with GitHub Actions CI to fail builds on performance regressions and generate HTML/CSV performance reports.</li>
             </ul>
           </div>
           
@@ -1330,18 +1392,21 @@
       <!-- E-Cell, IIT Bombay -->
       <div class="timeline-item reveal">
         <div class="timeline-date">June 2026 — Present</div>
-        <div class="timeline-role">Founding Campus Ambassador</div>
-        <div class="timeline-company">🏛️ E-Cell, IIT Bombay — Kalasalingam University Chapter</div>
+        <div class="timeline-role">Campus Ambassador</div>
+        <div class="timeline-company">
+          <span>🏛️ E-Cell, IIT Bombay — Kalasalingam University Chapter</span>
+          <span class="status-badge ongoing">Present</span>
+        </div>
         <div class="timeline-card">
           <div class="timeline-desc">
-            Selected as the founding Campus Ambassador to establish the E-Cell chapter at Kalasalingam Academy of Research and Education under IIT Bombay's National Entrepreneurship Challenge (NEC), representing a university campus of over 12,000 students.
+            Selected as founding Campus Ambassador to establish the E-Cell chapter at Kalasalingam Academy of Research and Education under IIT Bombay's National Entrepreneurship Challenge (NEC), representing a campus of over 12,000 students.
           </div>
           
           <div id="exp-ecell-details" style="display: none;">
             <ul class="exp-bullet-list">
-              <li><strong>Brand Building & Outreach:</strong> Leading outreach initiatives, recruitment drives, and strategic campaigns to build the E-Cell brand from the ground up and foster an entrepreneurial culture on campus.</li>
-              <li><strong>Student Engagement:</strong> Driving student participation in national startup competitions, hackathons, and entrepreneurship programmes through targeted campaigns.</li>
-              <li><strong>Workshops & Events:</strong> Organizing workshops, awareness sessions, and networking events to introduce students to innovation and the startup ecosystem.</li>
+              <li><strong>Outreach &amp; Recruitment:</strong> Leading outreach initiatives, recruitment drives, and strategic campaigns to build the E-Cell brand from the ground up.</li>
+              <li><strong>Startup Competitions:</strong> Driving student participation in national-level startup competitions, hackathons, and entrepreneurship programmes.</li>
+              <li><strong>Workshops &amp; Events:</strong> Organizing workshops, awareness sessions, and networking events to introduce students to innovation and the startup ecosystem.</li>
               <li><strong>IIT Bombay Network:</strong> Collaborating with IIT Bombay's E-Cell network to strengthen community engagement and support campus founders.</li>
             </ul>
           </div>
@@ -1363,11 +1428,14 @@
       <!-- Bee Skilled -->
       <div class="timeline-item reveal">
         <div class="timeline-date">August 2026 — Present</div>
-        <div class="timeline-role">Machine Learning & AI Intern</div>
-        <div class="timeline-company">🤖 Bee Skilled</div>
+        <div class="timeline-role">Machine Learning &amp; AI Intern</div>
+        <div class="timeline-company">
+          <span>🤖 Bee Skilled</span>
+          <span class="status-badge ongoing">Present</span>
+        </div>
         <div class="timeline-card">
           <div class="timeline-desc">
-            Selected for an online internship in Machine Learning & Artificial Intelligence, focused on gaining practical, hands-on industry experience through technical tasks and project deliverables.
+            Selected for an online internship in Machine Learning &amp; Artificial Intelligence, focused on gaining practical, hands-on industry experience through technical tasks and project deliverables.
           </div>
           
           <div id="exp-beeskilled-details" style="display: none;">
@@ -1392,12 +1460,14 @@
 
       <!-- KARE IEEE SMC Society -->
       <div class="timeline-item reveal">
-        <div class="timeline-date">July 2026 — Present</div>
-        <div class="timeline-role">Core Member & Student Member</div>
-        <div class="timeline-company">⚡ KARE IEEE Systems, Man, and Cybernetics (SMC) Society</div>
+        <div class="timeline-date">July 2026 — August 2026</div>
+        <div class="timeline-role">Core Member &amp; Student Member</div>
+        <div class="timeline-company">
+          <span>⚡ KARE IEEE Systems, Man, and Cybernetics (SMC) Society</span>
+        </div>
         <div class="timeline-card">
           <div class="timeline-desc">
-            Serving as a Core Member of KARE IEEE SMC Society, co-organizing technical workshops, innovation events, and professional development initiatives for approximately 400+ student members.
+            Served as a Core Member of KARE IEEE SMC Society, co-organizing technical workshops, innovation events, and professional development initiatives for approximately 400+ student members.
           </div>
           <div class="timeline-tags">
             <span class="ttag">Technical Events</span>
@@ -1410,9 +1480,11 @@
 
       <!-- IEEE Student Member -->
       <div class="timeline-item reveal" style="padding-bottom:0;">
-        <div class="timeline-date">March 2026 — Present</div>
+        <div class="timeline-date">March 2026 — August 2026</div>
         <div class="timeline-role">Student Member</div>
-        <div class="timeline-company">🌐 IEEE International</div>
+        <div class="timeline-company">
+          <span>🌐 IEEE International</span>
+        </div>
         <div class="timeline-card">
           <div class="timeline-desc">
             Active IEEE Student Member participating in technical seminars, research paper discussions, networking events, and collaborative technology initiatives.
@@ -1434,14 +1506,14 @@
     <div class="timeline">
       <div class="timeline-item reveal">
         <div class="timeline-date">2024 — 2028 (Expected May 2028)</div>
-        <div class="timeline-role">B.Tech in Computer Science & Engineering (Artificial Intelligence & ML)</div>
+        <div class="timeline-role">B.Tech in Computer Science &amp; Engineering (Artificial Intelligence &amp; ML)</div>
         <div class="timeline-company">🎓 Kalasalingam Academy of Research and Education (KARE), Madurai</div>
         <div class="timeline-card">
           <div class="edu-grade">
             <span>📊</span> <strong>CGPA: 8.48</strong> / 10.0
           </div>
           <div class="timeline-desc">
-            Specializing in Artificial Intelligence and Machine Learning. Coursework includes Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Machine Learning algorithms, and Software Engineering principles.
+            Specializing in Artificial Intelligence and Machine Learning. Coursework includes Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Machine Learning algorithms, and Software Engineering principles.
           </div>
         </div>
       </div>
@@ -1492,11 +1564,11 @@
           <canvas class="proj-canvas" id="pc1"></canvas>
         </div>
         <div class="project-overlay">
-          <span class="project-badge">Open Source Internship @ IIT Ropar</span>
+          <span class="project-badge">Open Source Internship Project @ IIT Ropar</span>
           <div class="project-client">MERN Stack • Google Gemini AI • Locust SLA</div>
           <div class="project-name">CrowdFAQ — Community Knowledge Platform</div>
           <div class="project-desc">
-            Full-stack MERN community platform enabling crowd-sourced FAQs with Google Gemini AI summary generation, embeddable widget, browser extension, contributor reputation badges, and automated CI/CD Locust SLA performance verification.
+            Full-stack MERN community platform enabling crowd-sourced FAQs with Google Gemini AI discussion summarization, embeddable widget, browser extension, contributor reputation badges, and automated CI/CD Locust SLA performance verification.
           </div>
           <div class="project-tags">
             <span class="ptag">React / Vite</span>
@@ -1507,7 +1579,7 @@
             <span class="ptag">Locust Load Testing</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Nikhilsai-9/Crowd-Source-FAQ" target="_blank" rel="noopener noreferrer" class="project-link">🐙 GitHub Repo</a>
+            <a href="https://github.com/Nikhilsai-9/Crowd-Source-FAQ" target="_blank" rel="noopener noreferrer" class="project-link">🐙 View on GitHub</a>
           </div>
         </div>
       </div>
@@ -1532,7 +1604,7 @@
             <span class="ptag">JavaScript Dashboard</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Nikhilsai-9/Smart-Crutch" target="_blank" rel="noopener noreferrer" class="project-link">🐙 GitHub Repo</a>
+            <a href="https://github.com/Nikhilsai-9/Smart-Crutch" target="_blank" rel="noopener noreferrer" class="project-link">🐙 View on GitHub</a>
           </div>
         </div>
       </div>
@@ -1555,7 +1627,7 @@
             <span class="ptag">Data Visualization</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Nikhilsai-9/gridsense-ai" target="_blank" rel="noopener noreferrer" class="project-link">🐙 GitHub Repo</a>
+            <a href="https://github.com/Nikhilsai-9/gridsense-ai" target="_blank" rel="noopener noreferrer" class="project-link">🐙 View on GitHub</a>
           </div>
         </div>
       </div>
@@ -1569,16 +1641,16 @@
           <div class="project-client">Personal Portfolio 2.0</div>
           <div class="project-name">Interactive Developer Portfolio</div>
           <div class="project-desc">
-            Production-grade personal portfolio built with HTML, CSS, JavaScript, interactive 3D perspective photo tilt, canvas aurora particle graphics, expandable experience cards, and a functional Web3Forms contact backend.
+            Production-grade personal portfolio built with HTML, CSS, JavaScript, interactive 3D orbit photo tilt, canvas aurora particle graphics, expandable experience cards, and a functional Web3Forms contact backend.
           </div>
           <div class="project-tags">
             <span class="ptag">HTML5 / CSS3</span>
             <span class="ptag">JavaScript ES6+</span>
-            <span class="ptag">3D Tilt Effects</span>
+            <span class="ptag">3D Tilt Orbit</span>
             <span class="ptag">Canvas Particles</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Nikhilsai-9/nikhilsai-portfolio" target="_blank" rel="noopener noreferrer" class="project-link">🐙 GitHub Repo</a>
+            <a href="https://github.com/Nikhilsai-9/nikhilsai-portfolio" target="_blank" rel="noopener noreferrer" class="project-link">🐙 View on GitHub</a>
           </div>
         </div>
       </div>
@@ -1601,7 +1673,7 @@
 
       <div class="skill-card reveal">
         <div class="skill-icon">🖥️</div>
-        <div class="skill-name">Backend & APIs</div>
+        <div class="skill-name">Backend &amp; APIs</div>
         <div class="skill-desc">Node.js, Express.js, REST API Design, Python, Flask, Authentication, Middleware.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" data-width="0.85"></div></div>
       </div>
@@ -1615,7 +1687,7 @@
 
       <div class="skill-card reveal">
         <div class="skill-icon">🤖</div>
-        <div class="skill-name">AI & ML Technologies</div>
+        <div class="skill-name">AI &amp; ML Technologies</div>
         <div class="skill-desc">Google Gemini AI API, Machine Learning basics, Prompt Engineering, AI-Assisted Workflows.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" data-width="0.80"></div></div>
       </div>
@@ -1629,7 +1701,7 @@
 
       <div class="skill-card reveal">
         <div class="skill-icon">💻</div>
-        <div class="skill-name">Dev Tools & Testing</div>
+        <div class="skill-name">Dev Tools &amp; Testing</div>
         <div class="skill-desc">Git, GitHub, VS Code, Postman, Locust SLA Testing, GitHub Actions CI, npm.</div>
         <div class="skill-bar-wrap"><div class="skill-bar" data-width="0.88"></div></div>
       </div>
@@ -1646,7 +1718,7 @@
       <div class="achievement-card reveal">
         <div class="achieve-icon">🌟</div>
         <div class="achieve-title">IIT Ropar Open Source Internship</div>
-        <div class="achieve-desc">Selected as Full-Stack developer contributor for VLED Lab's Summer 2026 internship on CrowdFAQ, a production-grade MERN platform.</div>
+        <div class="achieve-desc">Full-Stack developer intern for VLED Lab's Summer 2026 internship on CrowdFAQ, a production-grade MERN platform.</div>
       </div>
 
       <div class="achievement-card reveal">
@@ -1657,7 +1729,7 @@
 
       <div class="achievement-card reveal">
         <div class="achieve-icon">🏆</div>
-        <div class="achieve-title">Academic Distinction & School Topper</div>
+        <div class="achieve-title">Academic Distinction &amp; School Topper</div>
         <div class="achieve-desc">Awarded Class X School Topper (84%); scored 94.2% in Class XII MPC; currently maintaining an 8.48 CGPA in B.Tech CSE (AI & ML).</div>
       </div>
 
@@ -1683,7 +1755,7 @@
         <div class="section-label" style="margin-bottom:20px;">About Me</div>
         <h2>Engineering products with code, design, and product thinking.</h2>
         <p>Hi, I'm <strong>Nikhil Sai Kenguri</strong> — a Full-Stack Developer and B.Tech CSE (AI & ML) student at Kalasalingam University, Madurai.</p>
-        <p>I prefer building functional software over talking theory. Currently, I am contributing to <strong>CrowdFAQ</strong> (a production-grade MERN platform) through my internship at VLED Lab, IIT Ropar — writing live code, submitting PRs, and conducting SLA testing.</p>
+        <p>I prefer building functional software over talking theory. Completed my internship on <strong>CrowdFAQ</strong> (a production-grade MERN platform) with VLED Lab, IIT Ropar — writing live code, submitting PRs, and conducting Locust SLA load testing.</p>
         <p>I design interfaces in Figma before writing code because good software begins with understanding the user. I bring hands-on MERN experience, UI/UX proficiency, and a builder's mindset to software development teams.</p>
 
         <div class="about-details">
@@ -1803,8 +1875,8 @@
   <!-- FOOTER -->
   <footer>
     <div>© 2026 Nikhil Sai Kenguri</div>
-    <div>Full-Stack Developer · AI & ML Student · Open Source Contributor</div>
-    <div>Built with React/JS, Craftsmanship & Care.</div>
+    <div>Full-Stack Developer · AI &amp; ML Student · Open Source Contributor</div>
+    <div>Built with React/JS, Craftsmanship &amp; Care.</div>
   </footer>
 
   <!-- SCRIPTS -->
@@ -1846,7 +1918,7 @@
       if (mobileDrawer) mobileDrawer.classList.remove('open');
     }
 
-    // ============ 3D INTERACTIVE TILT PROFILE PHOTO ============
+    // ============ 3D INTERACTIVE TILT PROFILE PHOTO & ELEGANT ORBIT ============
     const photoCard = document.getElementById('photo3DCard');
     if (photoCard) {
       const reflection = photoCard.querySelector('.photo-reflection');
@@ -1857,8 +1929,8 @@
         const x = e.clientX - rect.left - rect.width / 2;
         const y = e.clientY - rect.top - rect.height / 2;
 
-        const rotX = (-y / (rect.height / 2)) * 14;
-        const rotY = (x / (rect.width / 2)) * 14;
+        const rotX = (-y / (rect.height / 2)) * 12;
+        const rotY = (x / (rect.width / 2)) * 12;
 
         photoCard.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
 
@@ -1869,9 +1941,9 @@
 
         badges.forEach(b => {
           const depth = parseFloat(b.dataset.depth) || 0.4;
-          const bx = (x / (rect.width / 2)) * 22 * depth;
-          const by = (y / (rect.height / 2)) * 22 * depth;
-          b.style.transform = `translateX(${bx}px) translateY(${by}px) translateZ(${40 * depth}px)`;
+          const bx = (x / (rect.width / 2)) * 20 * depth;
+          const by = (y / (rect.height / 2)) * 20 * depth;
+          b.style.transform = `translateX(${bx}px) translateY(${by}px) translateZ(${35 * depth}px)`;
         });
       });
 
@@ -1950,7 +2022,7 @@
             bgCtx.beginPath();
             bgCtx.moveTo(particles[i].x, particles[i].y);
             bgCtx.lineTo(particles[j].x, particles[j].y);
-            bgCtx.strokeStyle = `rgba(91,127,255,${0.08 * (1 - dist/80)})`;
+            bgCtx.strokeStyle = `rgba(91,127,255,${0.09 * (1 - dist/80)})`;
             bgCtx.lineWidth = 0.5;
             bgCtx.stroke();
           }
@@ -2124,7 +2196,7 @@
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            access_key: '568bd100-2f3b-4e1b-b7cf-7a32dcfceae0', // Public endpoint routing messages to sainikhil1146@gmail.com
+            access_key: '568bd100-2f3b-4e1b-b7cf-7a32dcfceae0', // Public key for sainikhil1146@gmail.com
             name: name,
             email: email,
             subject: `Portfolio Inquiry: ${subject}`,
